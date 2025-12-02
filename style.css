@@ -9,9 +9,12 @@
 } this is for making sure image hovers load in with everything,
  instead of loading after we hover over  the image
  probably wont use this though who knows */
-
+@font-face {
+    font-family: "barlow condensed";
+    src: url(/Fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
+}
 body{
-    background-color: rgb(74, 71, 71);
+    background: linear-gradient(to right,rgb(42, 41, 41),rgb(49, 61, 60));
 }
 .header-main{
     width: 100%;
@@ -26,8 +29,6 @@ body{
     height: 100%;
     background-color: white;
     display:flex;
-    
-    
     
 }
 .header-main-logo img{
@@ -49,40 +50,50 @@ body{
 
 }
 
-.header-main-nav ul li{
-
-}
-
 .header-main-nav ul li a{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "barlow condensed", sans-serif;
+    font-size: 30px;
     line-height: 60px;
     text-decoration: none;
     color:black;
+    display: block;
+    height: 100%;
+}
+
+.header-main-nav ul li a:hover{
+    color:cyan;
 }
 
 .header-main-sm{
     width: fit-content;
     height: 100%;
     background-color: white;
-    padding-right: 60px;
+    padding-right: 10px;
     display:flex;
     align-items: center;
     column-gap: 20px;
 }
 
 .header-main-sm-gh{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     background-image: url(/images/github.png);
     background-repeat: no-repeat;
     background-size: cover;
     
 }
-
+.header-main-sm-gh:hover{
+    height: 40px;
+    width: 40px;
+}
 .header-main-sm-ca{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     background-image: url(/images/codeacademy.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.header-main-sm-ca:hover{
+    height: 40px;
+    width: 40px;
 }
