@@ -1,0 +1,130 @@
+/* body:after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url();
+    
+} this is for making sure image hovers load in with everything,
+ instead of loading after we hover over  the image
+ probably wont use this though who knows */
+
+:root{
+    --main-background-color: linear-gradient(to right,rgb(42, 41, 41),rgb(49, 61, 60));
+}
+
+@font-face {
+    font-family: "barlow condensed bold";
+    src: url(/Fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: "barlow condensed";
+    src: url(/Fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+}
+
+body{
+    background: var(--main-background-color);
+    padding-top: 60px;
+}
+h1{
+    font-size: 26px;
+    line-height: 32px;
+    color: white;
+    font-family: "barlow condensed bold", sans-serif;
+    text-transform: uppercase;
+    
+}
+
+p{
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    font-family: "barlow condensed", sans-serif;
+    
+}
+
+.header-main{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;    
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.header-main-logo{
+    width: fit-content;
+    height: 100%;
+    background-color: white;
+    display:flex;
+    
+}
+.header-main-logo img{
+    height: 60px;
+    justify-self: center;
+}
+
+.header-main-nav{
+    width: fit-content;
+    height: 100%;
+    background-color: white;
+}
+
+.header-main-nav ul{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 30px;
+
+}
+
+.header-main-nav ul li a{
+    font-family: "barlow condensed", sans-serif;
+    font-size: 30px;
+    line-height: 60px;
+    text-decoration: none;
+    color:black;
+    display: block;
+    height: 100%;
+}
+
+.header-main-nav ul li a:hover{
+    color:cyan;
+}
+
+.header-main-sm{
+    width: fit-content;
+    height: 100%;
+    background-color: white;
+    padding-right: 10px;
+    display:flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.header-main-sm-gh{
+    height: 35px;
+    width: 35px;
+    background-image: url(/images/github.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.header-main-sm-gh:hover{
+    height: 40px;
+    width: 40px;
+}
+.header-main-sm-ca{
+    height: 35px;
+    width: 35px;
+    background-image: url(/images/codeacademy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-main-sm-ca:hover{
+    height: 40px;
+    width: 40px;
+}
