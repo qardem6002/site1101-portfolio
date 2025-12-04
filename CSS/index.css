@@ -1,8 +1,8 @@
 main {
     width: 100%;
     height: calc(100vh - 60px);
-    background-image: url(/images/me.png);
+    background-image: url(/images/me.png), url(/images/background-main-01.png);
     background-repeat: no-repeat;
-    background-size: 60vh, cover;
+    background-size: 33vh, cover;
     background-position: bottom,center;
 }
