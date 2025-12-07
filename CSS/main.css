@@ -13,6 +13,7 @@
 :root{
     --main-background-color: linear-gradient(to right,rgb(42, 41, 41),rgb(49, 61, 60));
     --header-background-color: rgb(224, 218, 218);
+    --smthlikecyan: cyan;
 }
 
 @font-face {
@@ -93,7 +94,7 @@ p{
 }
 
 .header-main-nav ul li a:hover{
-    color:cyan;
+    color:var(--smthlikecyan);
 }
 
 .header-main-sm{
