@@ -4,11 +4,20 @@ main {
     background-image: url(/images/me.png), url(/images/background-main-01.png);
     background-repeat: no-repeat;
     background-size: 33vh, cover;
-    background-position: bottom,center;
+    background-position: bottom left calc(50% + 30px),center;
     display:flex;
     justify-content: center;
-    align-items:   center;
+    align-items: center;
     z-index: 100;
+}
+
+main .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 220px;
+    width: 100%;
+    max-width: 100%;
 }
 
 main .main-intro h1{
@@ -30,6 +39,11 @@ main a{
     padding: 10px 20px;
     margin-top: 25px;
     width: fit-content;
+    transition: all 0.3s ease;
+}
+main a:hover{
+    background-color: #00ffff;
+    transform: scale(1.05);
 }
 
 main .main-quotes p{
@@ -42,14 +56,75 @@ main .main-quotes p:nth-child(2){
 }
 
 main .main-intro{
-    position: relative;
-    right: 20vh;
     padding-bottom: 20vh;
 }
 
 
 main .main-quotes{
-    position: relative;
-    left: 5vh;
     padding-bottom: 20vh;
+}
+
+
+
+/* ABOUT ME */
+
+.index-about {
+    width: 100%;
+    height: fit-content;
+    padding: 80px 0;
+}
+
+.wrapper-about {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.index-about-header h2 {
+    font-size: 72px;
+    font-family: "barlow condensed bold", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.index-about-chat {
+    width: 100%;
+}
+
+.index-about-chat p {
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    font-family: "barlow condensed", sans-serif;
+    text-align: center;
+}
+
+.index-about-contact {
+    text-align: center;
+}
+
+.index-about-contact a {
+    font-family: "barlow condensed bold", sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    color: black;
+    background-color: var(--smthlikecyan);
+    text-decoration: none;
+    padding: 12px 30px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.index-about-contact a:hover {
+    background-color: #00ffff;
+    transform: scale(1.05);
 }

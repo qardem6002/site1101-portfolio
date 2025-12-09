@@ -91,6 +91,7 @@ p{
     color:black;
     display: block;
     height: 100%;
+    transition: color 0.3s ease;
 }
 
 .header-main-nav ul li a:hover{
@@ -108,25 +109,120 @@ p{
 }
 
 .header-main-sm-gh{
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(/images/github.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: 35px 35px;
+    background-position: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
 .header-main-sm-gh:hover{
+    background-size: 40px 40px;
+    filter: brightness(1.2);
+}
+
+.header-main-sm-ca{
     height: 40px;
     width: 40px;
-}
-.header-main-sm-ca{
-    height: 35px;
-    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(/images/codeacademy.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 35px 35px;
+    background-position: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
 .header-main-sm-ca:hover{
-    height: 40px;
-    width: 40px;
+    background-size: 40px 40px;
+    filter: brightness(1.2);
 }
+
+/* FOOTER SECTION OF PAGE*/
+footer{
+    width: 100%;
+    height: fit-content;
+    padding: 60px 0 40px 0;
+    background-color: var(--header-background-color);
+    margin-top: 50px;
+    font-family: "barlow condensed", sans-serif;
+    color: black;
+    border-top: 2px solid #ddd;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-sitemap {
+    display: flex;
+    gap: 80px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-sitemap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-sitemap ul:first-child {
+    padding-left: 20px;
+    border-left: 3px solid var(--smthlikecyan);
+}
+
+.footer-sitemap ul:first-child li {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-sitemap ul:first-child li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.footer-sitemap ul:first-child li a:hover {
+    color: var(--smthlikecyan);
+}
+
+.footer-sitemap ul:last-child {
+    text-align: right;
+}
+
+.footer-sitemap ul:last-child li {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-sitemap ul:last-child li:first-child {
+    font-weight: 700;
+    color: var(--smthlikecyan);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
