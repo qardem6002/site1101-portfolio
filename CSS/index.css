@@ -1,10 +1,10 @@
 main {
     width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 6rem);
     background-image: url(/images/me.png), url(/images/background-main-01.png);
     background-repeat: no-repeat;
     background-size: 33vh, cover;
-    background-position: bottom left calc(50% + 30px),center;
+    background-position: bottom left calc(50% + 3rem),center;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -15,31 +15,32 @@ main .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 220px;
+    column-gap: 35rem;
     width: 100%;
     max-width: 100%;
 }
 
 main .main-intro h1{
-    font-size: 96px;
-    line-height: 106px;
+    font-size: 9.6rem;
+    line-height: 1.1;
 }
 
 main p{
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.8rem;
+    line-height: 1.67;
 }
 main a{
     font-family: "barlow condensed bold", sans-serif;
-    font-size: 18px;    
+    font-size: 1.8rem;    
     display:block;
     color: black;
     background-color: var(--smthlikecyan);
     text-decoration: none;
-    padding: 10px 20px;
-    margin-top: 25px;
+    padding: 1rem 2rem;
+    margin-top: 2.5rem;
     width: fit-content;
     transition: all 0.3s ease;
+    border-radius: 0.6rem;
 }
 main a:hover{
     background-color: #00ffff;
@@ -47,12 +48,12 @@ main a:hover{
 }
 
 main .main-quotes p{
-    border-left: 3px solid var(--smthlikecyan);
-    padding-left: 20px;
-    margin: 40px 0;
+    border-left: 0.3rem solid var(--smthlikecyan);
+    padding-left: 2rem;
+    margin: 4rem 0;
 }
 main .main-quotes p:nth-child(2){
-    margin-left: 60px;
+    margin-left: 6rem;
 }
 
 main .main-intro{
@@ -73,24 +74,24 @@ main .main-quotes{
 .index-about {
     width: 100%;
     height: fit-content;
-    padding: 80px 0;
+    padding: 8rem 0;
 }
 
-.wrapper-about {
+.index-about .wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 4rem;
     width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 4rem;
 }
 
 .index-about-header h2 {
-    font-size: 72px;
+    font-size: 7.2rem;
     font-family: "barlow condensed bold", sans-serif;
     color: white;
     text-transform: uppercase;
@@ -103,8 +104,8 @@ main .main-quotes{
 }
 
 .index-about-chat p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 1.56;
     color: white;
     font-family: "barlow condensed", sans-serif;
     text-align: center;
@@ -116,13 +117,14 @@ main .main-quotes{
 
 .index-about-contact a {
     font-family: "barlow condensed bold", sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
     display: inline-block;
     color: black;
     background-color: var(--smthlikecyan);
     text-decoration: none;
-    padding: 12px 30px;
-    margin-top: 20px;
+    padding: 1.2rem 3rem;
+    margin-top: 2rem;
+    border-radius: 0.6rem;
     transition: all 0.3s ease;
 }
 
@@ -138,7 +140,7 @@ main .main-quotes{
 .index-projects {
     width: 100%;
     height: fit-content;
-    padding: 80px 0;
+    padding: 8rem 0;
     background-color: var(--main-background-color);
 }
 
@@ -147,11 +149,11 @@ main .main-quotes{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 6rem;
 }
 
 .index-projects-header h2 {
-    font-size: 72px;
+    font-size: 7.2rem;
     font-family: "barlow condensed bold", sans-serif;
     color: white;
     text-transform: uppercase;
@@ -161,29 +163,29 @@ main .main-quotes{
 
 .index-projects-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 4rem;
     width: 100%;
     max-width: 1200px;
 }
 
 .project-card {
     background-color: var(--header-background-color);
-    border-radius: 12px;
+    border-radius: 1.2rem;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1rem);
+    box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.2);
     border-color: var(--smthlikecyan);
 }
 
 .project-card-image {
-    height: 250px;
+    height: 25rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -201,35 +203,35 @@ main .main-quotes{
     background-image: url('/images/smile.png');
 }
 .project-card-text {
-    padding: 30px;
+    padding: 3rem;
     text-align: center;
 }
 
 .project-card-text h3 {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-family: "barlow condensed bold", sans-serif;
     color: black;
-    margin: 0 0 15px 0;
+    margin: 0 0 1.5rem 0;
     text-transform: uppercase;
 }
 
 .project-card-text p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 1.5;
     color: #666;
     font-family: "barlow condensed", sans-serif;
-    margin: 0 0 25px 0;
+    margin: 0 0 2.5rem 0;
 }
 
 .project-link {
     display: inline-block;
     font-family: "barlow condensed bold", sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: black;
     background-color: var(--smthlikecyan);
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 6px;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
     transition: all 0.3s ease;
     text-transform: uppercase;
 }
@@ -237,4 +239,64 @@ main .main-quotes{
 .project-link:hover {
     background-color: #00ffff;
     transform: scale(1.05);
+}
+
+/* ============================================
+   RESPONSIVE SECTION
+   ============================================ */
+
+@media only screen and (max-width: 600px) {
+    main .main-quotes{
+        display:none;
+    }
+    main {
+        background-position: bottom left calc(50% + 0rem),center;
+        align-items: flex-end;
+    }
+
+    main .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 35rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    main .main-intro h1{
+        font-size: 5rem;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    main p{
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.67;
+    }
+    main a{
+        margin: 30px auto;
+    }
+    main a:hover{
+        background-color: #00ffff;
+        transform: scale(1.05);
+    }
+
+    main .main-quotes p{
+        border-left: 0.3rem solid var(--smthlikecyan);
+        padding-left: 2rem;
+        margin: 4rem 0;
+    }
+    main .main-quotes p:nth-child(2){
+        margin-left: 6rem;
+    }
+
+    main .main-intro{
+        padding-bottom: 20vh;
+    }
+
+
+    main .main-quotes{
+        padding-bottom: 20vh;
+    }
 }

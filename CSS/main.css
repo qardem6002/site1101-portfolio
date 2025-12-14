@@ -15,6 +15,9 @@
     --header-background-color: rgb(224, 218, 218);
     --smthlikecyan: cyan;
 }
+html{
+    font-size: 62.5%;
+}
 
 @font-face {
     font-family: "barlow condensed bold";
@@ -27,11 +30,11 @@
 
 body{
     background: var(--main-background-color);
-    padding-top: 60px;
+    padding-top: 6rem;
 }
 h1{
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 2.6rem;
+    line-height: 1.5;
     color: white;
     font-family: "barlow condensed bold", sans-serif;
     text-transform: uppercase;
@@ -39,8 +42,8 @@ h1{
 }
 
 p{
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 1.75;
     color: white;
     font-family: "barlow condensed", sans-serif;
     
@@ -50,7 +53,7 @@ p{
     position: fixed;
     top: 0;
     width: 100%;
-    height: 60px;
+    height: 6rem;
     background-color: var(--header-background-color);    
     display: flex;
     justify-content: space-between;
@@ -65,7 +68,7 @@ p{
     
 }
 .header-main-logo img{
-    height: 60px;
+    height: 6rem;
     justify-self: center;
 }
 
@@ -78,15 +81,15 @@ p{
 .header-main-nav ul{
     display:flex;
     align-items: center;
-    gap: 20px;
-    margin-left: 30px;
+    gap: 2rem;
+    margin-left: 3rem;
 
 }
 
 .header-main-nav ul li a{
     font-family: "barlow condensed", sans-serif;
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 3.0rem;
+    line-height: 6rem;
     text-decoration: none;
     color:black;
     display: block;
@@ -102,57 +105,61 @@ p{
     width: fit-content;
     height: 100%;
     background-color: var(--header-background-color);
-    padding-right: 10px;
+    padding-right: 1rem;
     display:flex;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 2rem;
 }
 
 .header-main-sm-gh{
-    height: 40px;
-    width: 40px;
+    height: 4rem;
+    width: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url(/images/github.png);
     background-repeat: no-repeat;
-    background-size: 35px 35px;
+    background-size: 3.5rem 3.5rem;
     background-position: center;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .header-main-sm-gh:hover{
-    background-size: 40px 40px;
+    background-size: 4rem 4rem;
     filter: brightness(1.2);
 }
 
 .header-main-sm-ca{
-    height: 40px;
-    width: 40px;
+    height: 4rem;
+    width: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url(/images/codeacademy.png);
     background-repeat: no-repeat;
-    background-size: 35px 35px;
+    background-size: 3.5rem 3.5rem;
     background-position: center;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .header-main-sm-ca:hover{
-    background-size: 40px 40px;
+    background-size: 4rem 4rem;
     filter: brightness(1.2);
 }
 
-/* FOOTER SECTION OF PAGE*/
+/* ============================================
+   FOOTER SECTION
+   ============================================ */
+
+
 footer{
     width: 100%;
     height: fit-content;
-    padding: 60px 0 40px 0;
+    padding: 6rem 0 4rem 0;
     background-color: var(--header-background-color);
-    margin-top: 50px;
+    margin-top: 5rem;
     font-family: "barlow condensed", sans-serif;
     color: black;
     border-top: 2px solid #ddd;
@@ -162,18 +169,18 @@ footer .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 60px;
+    gap: 6rem;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 4rem;
     width: 100%;
     box-sizing: border-box;
 }
 
 .footer-sitemap {
     display: flex;
-    gap: 80px;
+    gap: 8rem;
     width: 100%;
     justify-content: space-between;
 }
@@ -185,13 +192,13 @@ footer .wrapper {
 }
 
 .footer-sitemap ul:first-child {
-    padding-left: 20px;
-    border-left: 3px solid var(--smthlikecyan);
+    padding-left: 2rem;
+    border-left: 0.3rem solid var(--smthlikecyan);
 }
 
 .footer-sitemap ul:first-child li {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 2rem;
+    line-height: 3.2rem;
     margin: 0;
     padding: 0;
 }
@@ -212,8 +219,8 @@ footer .wrapper {
 }
 
 .footer-sitemap ul:last-child li {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     margin: 0;
     padding: 0;
 }
@@ -221,8 +228,125 @@ footer .wrapper {
 .footer-sitemap ul:last-child li:first-child {
     font-weight: 700;
     color: var(--smthlikecyan);
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 
+
+.burger-menu, .burger-menu-button{
+    display:none;
+}
+
+
+/* ============================================
+   RESPONSIVE SECTION
+   ============================================ */
+
+
+@media only screen and (max-width: 600px) {
+    .burger-menu-button{
+        display:block;
+        width: 50px;
+        height: 50px;
+        background-image: url(/images/burger-menu.png), url(/images/x-png-transparent-11.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+    }
+
+    .burger-menu{
+        display:none;
+        position:fixed;
+        width:100%;
+        height:100vh;
+        z-index: 900;
+        background: var(--main-background-color);
+    }
+
+    .burger-menu ul{
+        width: 100%;
+        height: calc(100vh - 6rem);
+        display:flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .burger-menu ul li{
+        flex-basis: 100%;
+        border-top: 2px solid var(--smthlikecyan);
+    }
+
+    .burger-menu ul li:last-child{
+        border-bottom: 2px solid var(--smthlikecyan);
+    }
+
+    .burger-menu ul li a{
+        display:block;
+        height: 100%;
+        font-size: 3rem;
+        padding: 3rem 0;
+        flex-basis:100%;
+        text-align: center;
+        text-decoration-line: none;
+        color: white;
+    }
+
+
+
+    .header-main-nav{
+        display: none;
+    }
+    .header-main-sm{
+        padding-right: 1rem;
+    }
+    footer {
+        padding: 4rem 0 3rem 0;
+        margin-top: 3rem;
+    }
+
+    footer .wrapper {
+        padding: 0 1.5rem;
+        gap: 2rem;
+    }
+
+    .footer-sitemap {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .footer-sitemap ul:first-child {
+        padding-left: 0;
+        border-left: none;
+        order: 2; /* Contact info comes first on mobile */
+    }
+
+    .footer-sitemap ul:first-child li {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .footer-sitemap ul:last-child {
+        order: 1; /* Navigation comes second on mobile */
+        text-align: center;
+        border-bottom: 2px solid var(--smthlikecyan);
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-sitemap ul:last-child li {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        margin: 0.3rem 0;
+    }
+
+    .footer-sitemap ul:last-child li:first-child {
+        font-weight: 700;
+        color: var(--smthlikecyan);
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+}
