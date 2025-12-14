@@ -66,7 +66,9 @@ main .main-quotes{
 
 
 
-/* ABOUT ME */
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
 
 .index-about {
     width: 100%;
@@ -125,6 +127,114 @@ main .main-quotes{
 }
 
 .index-about-contact a:hover {
+    background-color: #00ffff;
+    transform: scale(1.05);
+}
+
+/* ============================================
+   PROJECTS SECTION
+   ============================================ */
+
+.index-projects {
+    width: 100%;
+    height: fit-content;
+    padding: 80px 0;
+    background-color: var(--main-background-color);
+}
+
+.index-projects .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.index-projects-header h2 {
+    font-size: 72px;
+    font-family: "barlow condensed bold", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.index-projects-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.project-card {
+    background-color: var(--header-background-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-color: var(--smthlikecyan);
+}
+
+.project-card-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-card-image {
+    transform: scale(1.05);
+}
+
+.project-card-image-1 {
+    background-image: url('/images/project-1.jpeg');
+}
+.project-card-image-2 {
+    background-image: url('/images/smile.png');
+}
+.project-card-text {
+    padding: 30px;
+    text-align: center;
+}
+
+.project-card-text h3 {
+    font-size: 24px;
+    font-family: "barlow condensed bold", sans-serif;
+    color: black;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+.project-card-text p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #666;
+    font-family: "barlow condensed", sans-serif;
+    margin: 0 0 25px 0;
+}
+
+.project-link {
+    display: inline-block;
+    font-family: "barlow condensed bold", sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: var(--smthlikecyan);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.project-link:hover {
     background-color: #00ffff;
     transform: scale(1.05);
 }
