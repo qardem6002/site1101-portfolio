@@ -1,7 +1,7 @@
 main {
     width: 100%;
     height: calc(100vh - 6rem);
-    background-image: url(https://qardem6002.github.io/site1101-portfolio/images/me.png), url(https://qardem6002.github.io/site1101-portfolio/images/background-main-01.png);
+    background-image: url(images/me.png), url(images/background-main-01.png);
     background-repeat: no-repeat;
     background-size: 33vh, cover;
     background-position: bottom left calc(50% + 3rem),center;
@@ -197,10 +197,10 @@ main .main-quotes{
 }
 
 .project-card-image-1 {
-    background-image: url('https://qardem6002.github.io/site1101-portfolio/images/project-1.jpeg');
+    background-image: url('images/project-1.jpeg');
 }
 .project-card-image-2 {
-    background-image: url('https://qardem6002.github.io/site1101-portfolio/images/smile.png');
+    background-image: url('images/smile.png');
 }
 .project-card-text {
     padding: 3rem;

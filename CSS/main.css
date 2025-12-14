@@ -21,11 +21,11 @@ html{
 
 @font-face {
     font-family: "barlow condensed bold";
-    src: url(https://qardem6002.github.io/site1101-portfolio/Fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
+    src: url(Fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
 }
 @font-face {
     font-family: "barlow condensed";
-    src: url(https://qardem6002.github.io/site1101-portfolio/Fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+    src: url(Fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf);
 }
 
 body{
@@ -117,7 +117,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://qardem6002.github.io/site1101-portfolio/images/github.png);
+    background-image: url(images/github.png);
     background-repeat: no-repeat;
     background-size: 3.5rem 3.5rem;
     background-position: center;
@@ -136,7 +136,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://qardem6002.github.io/site1101-portfolio/images/codeacademy.png);
+    background-image: url(images/codeacademy.png);
     background-repeat: no-repeat;
     background-size: 3.5rem 3.5rem;
     background-position: center;
@@ -249,7 +249,7 @@ footer .wrapper {
         display:block;
         width: 50px;
         height: 50px;
-        background-image: url(https://qardem6002.github.io/site1101-portfolio/images/burger-menu.png), url(https://qardem6002.github.io/site1101-portfolio/images/x-png-transparent-11.png);
+        background-image: url(images/burger-menu.png), url(images/x-png-transparent-11.png);
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center, center left 50px;
